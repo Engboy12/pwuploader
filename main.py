@@ -51,7 +51,7 @@ AUTH_USER = os.environ.get('AUTH_USERS', '1226915008,7341059064,8144269730,64402
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
-CHANNEL_OWNERS = {}
+CHANNEL_OWNERS = {7080838404}
 CHANNELS = os.environ.get('CHANNELS', '').split(',')
 CHANNELS_LIST = [int(channel_id) for channel_id in CHANNELS if channel_id.isdigit()]
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
